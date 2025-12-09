@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web con HTML</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 1rem;
+      }
+
+      h1 {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.5rem;
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bienvenidos a mi Web</h1>
+    <p>Esta página está creada con <br> HTML, CSS y JavaScript </br>.</p>
+
+    <button id="boton-saludo"> Haz clic aquí saludar </button>
+    <p id="mensaje"></p>
+
+    <script>
+      const boton = document.getElementById('boton-saludo');
+      const mensaje = document.getElementById('mensaje');
+
+      boton.addEventListener('click', () => {
+        mensaje.textContent = 'Gracias por visitar mi Portafolio, espero que te haya gustado.!';
+      });
+    </script>
+  </body>
+</html>
